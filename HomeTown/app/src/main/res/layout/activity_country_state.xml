@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.c_ronaldo.myapplication_4.CountryStateActivity">
+
+    <fragment
+        android:id="@+id/countryFragment"
+        android:name="com.example.c_ronaldo.myapplication_4.CountryFragment"
+        android:layout_width="186dp"
+        android:layout_height="446dp"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <fragment
+        android:id="@+id/stateFragment"
+        android:name="com.example.c_ronaldo.myapplication_4.StateFragment"
+        android:layout_width="202dp"
+        android:layout_height="436dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/countryFragment"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="195dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:onClick="countryStateDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="81dp"
+        android:layout_marginTop="15dp"
+        android:text="Done"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countryFragment" />
+
+    <Button
+        android:id="@+id/button10"
+        android:onClick="countryStateCanceled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="18dp"
+        android:text="Cancel"
+        app:layout_constraintLeft_toRightOf="@+id/button6"
+        app:layout_constraintTop_toBottomOf="@+id/stateFragment" />
+
+</android.support.constraint.ConstraintLayout>

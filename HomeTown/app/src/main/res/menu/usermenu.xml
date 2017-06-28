@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:actionMenu="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title=" Show Users"
+        android:onClick="goToShowUsers"
+        android:titleCondensed="Show All Users"
+        actionMenu:showAsAction="ifRoom" />
+
+</menu>
