@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:actionMenu="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:title="mode"
+        android:id="@+id/Mode"
+        actionMenu:showAsAction="ifRoom">
+        <menu >
+            <group android:checkableBehavior="single"
+                android:id="@+id/modeGroup">
+                <item android:title="Drawing"
+                    android:id="@+id/DrawingMode"
+                    actionMenu:showAsAction="ifRoom" />
+                <item android:title="Delete"
+                    android:id="@+id/DeleteMode"
+                    actionMenu:showAsAction="ifRoom" />
+                <item android:title="Moving"
+                    android:id="@+id/MovingMode"
+                    actionMenu:showAsAction="ifRoom" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="color"
+        android:id="@+id/Color"
+        actionMenu:showAsAction="ifRoom">
+        <menu >
+            <group android:checkableBehavior="single"
+                android:id="@+id/colorGroup">
+                <item android:title="black"
+                    android:id="@+id/black" />
+                <item android:title="blue"
+                    android:id="@+id/blue" />
+                <item android:title="red"
+                    android:id="@+id/red" />
+                <item android:title="green"
+                    android:id="@+id/green" />
+            </group>
+        </menu>
+    </item>
+</menu>
